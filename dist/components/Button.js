@@ -1,6 +1,6 @@
 import { jsx as _jsx } from "react/jsx-runtime";
 var Button = function (_a) {
-    var label = _a.label, onClick = _a.onClick;
-    return _jsx("button", { onClick: onClick, children: label });
+    var name = _a.name, onClick = _a.onClick;
+    return _jsx("button", { onClick: onClick, children: name });
 };
 export default Button;

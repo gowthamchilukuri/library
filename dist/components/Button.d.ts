@@ -1,6 +1,6 @@
 import React from "react";
 interface ButtonProps {
-    label: string;
+    name: string;
     onClick: () => void;
 }
 declare const Button: React.FC<ButtonProps>;
