@@ -1,31 +1,28 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/index.tsx', // Entry point of your library
+  entry: './src/index.tsx', // Entry point for your library
   output: {
-    filename: 'index.js',
     path: path.resolve(__dirname, 'dist'),
-    libraryTarget: 'umd',
-    globalObject: 'this',
-  },
-  resolve: {
-    extensions: ['.tsx', '.ts', '.js'],
+    filename: 'bundle.js', // Name of the output bundle
+    library: 'MyLibrary', // Name of the library
+    libraryTarget: 'umd', // Universal Module Definition
+    umdNamedDefine: true, // Named UMD module
   },
   module: {
     rules: [
       {
-        test: /\.ts$/,
-        use: 'ts-loader',
-        exclude: /node_modules/,
-      },
-      {
-        test: /\.tsx?$/,
-        use: 'ts-loader',
+        test: /\.(ts|tsx)$/,
+        use: 'babel-loader',
         exclude: /node_modules/,
       },
     ],
   },
+  resolve: {
+    extensions: ['.ts', '.tsx', '.js', '.jsx'],
+  },
   externals: {
-    // Specify any external dependencies here
+    react: 'react', // Treat react as an external dependency
+    'react-dom': 'react-dom', // Treat react-dom as an external dependency
   },
 };

@@ -1,16 +1,16 @@
 {
   "compilerOptions": {
     "outDir": "./dist",  // Output directory for compiled files
-    "module": "ESNext",
-    "target": "ES5",
-    "lib": ["dom", "esnext"],
-    "declaration": true,  // Generates the .d.ts files for type declarations
-    "jsx": "react-jsx",  // Enable JSX syntax
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "strict": true
+    "module": "ESNext",  // Module system to use
+    "target": "ES5",     // ECMAScript target version
+    "lib": ["dom", "esnext"], // Specify library files to be included
+    "declaration": true,  // Generates .d.ts files for type declarations
+    "jsx": "react-jsx",   // Enable JSX syntax
+    "moduleResolution": "node", // Use Node module resolution
+    "esModuleInterop": true, // Enable emit interoperability between CommonJS and ES Modules
+    "skipLibCheck": true,  // Skip type checking of declaration files
+    "strict": true          // Enable all strict type checking options
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist"]
+  "include": ["src/**/*"], // Include all TypeScript files in src
+  "exclude": ["node_modules", "dist"] // Exclude node_modules and dist
 }
