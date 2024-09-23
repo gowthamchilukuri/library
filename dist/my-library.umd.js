@@ -1,4 +1,4 @@
-(function(h,T){typeof exports=="object"&&typeof module<"u"?T(exports,require("react")):typeof define=="function"&&define.amd?define(["exports","react"],T):(h=typeof globalThis<"u"?globalThis:h||self,T(h["Library-Sigeo"]={},h.React))})(this,function(h,T){"use strict";var B={exports:{}},j={};/**
+(function(h,T){typeof exports=="object"&&typeof module<"u"?T(exports,require("react")):typeof define=="function"&&define.amd?define(["exports","react"],T):(h=typeof globalThis<"u"?globalThis:h||self,T(h.LibrarySigeo={},h.React))})(this,function(h,T){"use strict";var B={exports:{}},j={};/**
  * @license React
  * react-jsx-runtime.production.min.js
  *

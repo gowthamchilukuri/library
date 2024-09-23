@@ -1,7 +1,17 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+  "compilerOptions": {
+    "declaration": true,               // Enable declaration files
+    "declarationMap": true,            // Optionally enable declaration map
+    "emitDeclarationOnly": true,       // Only generate declaration files
+    "outDir": "dist",                  // Output directory for declaration files
+    "moduleResolution": "node",
+    "jsx": "react-jsx",
+    "target": "esnext",
+    "module": "esnext",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true
+  },
+  "include": ["src"],                  // Include the source files
+  "exclude": ["node_modules", "dist"]  // Exclude node_modules and dist folders
 }
