@@ -2,10 +2,12 @@
   "name": "library",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/bundle.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "build": "webpack",
-    "watch": "webpack --watch"
+    "build": "webpack && tsc",  
+    "watch": "webpack --watch",
+    "tsc": "tsc" 
   },
   "keywords": [],
   "author": "",

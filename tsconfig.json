@@ -1,10 +1,11 @@
 {
   "compilerOptions": {
-    "jsx": "react-jsx",  
+    "outDir": "./dist",  // Output directory for compiled files
     "module": "ESNext",
     "target": "ES5",
     "lib": ["dom", "esnext"],
-    "declaration": true,
+    "declaration": true,  // Generates the .d.ts files for type declarations
+    "jsx": "react-jsx",  // Enable JSX syntax
     "moduleResolution": "node",
     "esModuleInterop": true,
     "skipLibCheck": true,
