@@ -14,7 +14,8 @@
     "module": "esnext",
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "strict": true
+    "strict": true,
+    "typeRoots": ["./node_modules/@types", "./src/types.d.ts"]
   },
   "include": ["src"],
   "exclude": ["node_modules", "dist"]

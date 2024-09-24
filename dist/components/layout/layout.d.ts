@@ -1,12 +1,12 @@
 import { default as React } from 'react';
-type Props = {
-    notifications: any[];
-    Outlet: React.FC;
+interface Props {
+    notifications: never[];
+    Outlet: () => React.ReactElement;
     NotificationsPanel: React.FC<{
         notificationsPanel: boolean;
         setNotificationsPanel: React.Dispatch<React.SetStateAction<boolean>>;
     }>;
-};
+}
 declare function Layout({ notifications, Outlet, NotificationsPanel }: Props): import("react/jsx-runtime").JSX.Element;
 export default Layout;
-//# sourceMappingURL=layout.d.ts.map
+//# sourceMappingURL=Layout.d.ts.map
